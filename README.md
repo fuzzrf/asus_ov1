@@ -3,6 +3,7 @@ ASUS RT-AX92U overflow
 Firmware version - 3.0.0.4.386_45898
 
 When AiCloud 2.0 Cloud Disk functionality is enabled, the router start lighttpd server on port 443.
+
 There is a heap overflow when parsing GETTHUMBIMAGE HTTP request.
 
 Consider the following code from mod_webdav.c:
